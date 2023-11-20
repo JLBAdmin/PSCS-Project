@@ -1,0 +1,63 @@
+/* eslint-disable no-console */
+/* eslint-disable react-hooks/rules-of-hooks */
+/* eslint-disable @typescript-eslint/no-shadow */
+import axios from 'axios';
+import { getCookie } from 'cookies-next';
+import { NextPage } from 'next';
+import dynamic from 'next/dynamic';
+import { useRouter } from 'next/router';
+import { useEffect } from 'react';
+import useSWR from 'swr';
+
+import { colModel, colName } from '@/components/grid-headers/target.header';
+import { Meta } from '@/layouts/Meta';
+import { Main } from '@/templates/Main';
+
+const fetcher = (url: string) => axios.get(url).then((res) => res.data);
+
+const Targets = dynamic(() => import('@/components/grid-tables/grid-master1'), {
+  ssr: false
+});
+
+const Target: NextPage = () => {
+  const router = useRouter();
+  useEffect(() => {
+    const token = getCookie('ps-jwt');
+    if (!token) {
+      router.push('/login');
+    }
+  }, []);
+  const { data, error } = useSWR(`/api/target/get`, fetcher, {
+    refreshInterval: 0
+  });
+  if (error) return <div>failed to load</div>;
+  if (!data) return <div>loading...</div>;
+
+  return (
+    <Main
+      meta={
+        <Meta
+          title='เป้าหมายพื้นที่ - บริษัท น้ำตาลพิษณุโลก จำกัด'
+          description='เป้าหมายพื้นที่ ครอบคลุมทุกพื้นที่'
+        />
+      }
+    >
+      <div className='grid grid-cols-1 gap-6 xl:grid-cols-1'>
+        <Targets
+          impData={data}
+          colModel={colModel}
+          colNames={colName}
+          isTable={'target'}
+          isAction={false}
+          isImport={false}
+          isExport={true}
+          isAdd={true}
+          isDel={true}
+          isCaption={`เป้าหมายส่งเสริม`}
+        />
+      </div>
+    </Main>
+  );
+};
+
+export default Target;

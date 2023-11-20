@@ -1,0 +1,116 @@
+/* @import url("https://code.jquery.com/ui/1.13.1/themes/hot-sneaks/jquery-ui.css"); */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css");
+
+.ui-jqgrid {
+  font-size: 0.7em;
+  font-family: "Noto Sans Thai", sans-serif;
+}
+
+.jqgrow > td input[type="text"].editable,
+.jqgrow > td input[type="date"].editable,
+.jqgrow > td input[type="number"].editable,
+.jqgrow > td input[type="textarea"].editable,
+.jqgrow > td input[type="checkbox"].editable,
+.jqgrow > td input,
+.jqgrow > td textarea {
+  font-family: "Noto Sans Thai", sans-serif;
+  height: 80%;
+  width: 100%;
+  font-size: 0.9rem; /* 1rem instead of 1em */
+  /*  box-sizing: border-box; */
+}
+
+.ui-jqgrid td input,
+.ui-jqgrid td select,
+.ui-jqgrid td textarea {
+  margin: 0;
+  height: auto;
+}
+
+.jqgrow > td select.editable,
+.jqgrow > td select {
+  font-family: "Noto Sans Thai", sans-serif;
+  height: 80%;
+  width: 100%;
+  font-size: 1rem; /* 1rem instead of 1em */
+  /* box-sizing: border-box; */
+}
+
+.ui-jqgrid .ui-jqgrid-htable .ui-search-toolbar th {
+  height: auto;
+}
+.ui-jqgrid .ui-search-toolbar .ui-search-table {
+  height: auto;
+}
+.ui-jqgrid .ui-search-toolbar .ui-search-input input,
+.ui-jqgrid .ui-search-toolbar .ui-search-input select,
+.ui-jqgrid .ui-search-toolbar .ui-search-input textarea {
+  height: 90%;
+  width: 100%;
+  font-size: 1rem; /* 1rem instead of 1em */
+  /* box-sizing: border-box; */
+}
+
+.ui-datepicker,
+.ui-autocomplete {
+  font-size: 12px;
+}
+.ui-autocomplete .ui-menu-item div:not(.ui-state-active) {
+  /* rservate space for the border, which will be visible on active items */
+  border: 1px solid transparent;
+}
+.ui-autocomplete .ui-menu-item div.ui-state-active {
+  /* ovewrite some default rules from jQuery UI */
+  font-weight: normal;
+  margin: 0;
+}
+
+.ui-jqgrid .ui-pg-input,
+.ui-jqgrid .ui-pg-selbox {
+  height: 17px;
+}
+.ui-jqgrid .ui-pg-table {
+  padding-bottom: 0;
+}
+.ui-jqdialog .select2-container .select2-choice,
+.ui-search-toolbar .select2-container .select2-choice {
+  height: auto;
+  padding-top: 1px;
+  padding-left: 0.2em;
+  padding-bottom: 2px;
+  line-height: 15px;
+}
+.ui-jqdialog .select2-container .select2-choice .select2-arrow b,
+.ui-search-toolbar .select2-container .select2-choice .select2-arrow b {
+  background-position: 0 -4px;
+}
+.ui-jqdialog.select2-drop {
+  padding: 0px;
+}
+.ui-jqdialog .select2-results .select2-result-label,
+.ui-search-toolbar .select2-results .select2-result-label {
+  padding: 2px;
+}
+.ui-jqgrid .ui-jqgrid-htable th div {
+  height: auto !important;
+}
+
+.ui-jqgrid tr.jqgrow td {
+  word-wrap: break-word; /* IE 5.5+ and CSS3 */
+  white-space: pre-wrap; /* CSS3 */
+  white-space: -moz-pre-wrap; /* Mozilla, since 1999 */
+  white-space: -pre-wrap; /* Opera 4-6 */
+  white-space: -o-pre-wrap; /* Opera 7 */
+  overflow: hidden;
+  height: auto;
+  vertical-align: middle;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+/*Toolbar customization*/
+.ui-jqgrid .ui-jqgrid-toppager {
+  width: auto !important; /*1200 px*/
+}
+

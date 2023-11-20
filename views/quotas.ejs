@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/psicon.ico" rel="icon">
+    <link rel="stylesheet" href="/assets/css/print.css" />
+    <link rel="stylesheet" href="/assets/css/styleFarmer.css" />
+    <title>PS - ประวัติชาวไร่</title>
+</head>
+
+<body>
+  <div class="page">
+    <table border=0 cellpadding=0 cellspacing=0 width=770 class=xl8030927
+ style='border-collapse:collapse;table-layout:fixed;width:580pt'>
+ <col class=xl8030927 width=77 style='mso-width-source:userset;mso-width-alt:
+ 2464;width:58pt'>
+ <col class=xl8030927 width=77 style='width:58pt'>
+ <col class=xl8030927 width=77 style='width:58pt'>
+ <col class=xl8030927 width=77 style='width:58pt'>
+ <col class=xl8030927 width=77 style='width:58pt'>
+ <col class=xl8030927 width=77 style='width:58pt'>
+ <col class=xl8030927 width=77 style='width:58pt'>
+ <col class=xl8030927 width=77 style='width:58pt'>
+ <col class=xl8030927 width=77 style='width:58pt'>
+ <col class=xl8030927 width=77 style='width:58pt'>
+ <tr height=50 style='mso-height-source:userset;height:42.75pt'>
+  <td colspan=10 height=50 width=770 style='height:42.75pt;width:580pt'
+  align=left valign=top><span style='mso-ignore:vglayout;
+  position:absolute;z-index:1;margin-left:272px;margin-top:1px;width:203px;
+  height:50px'><img width=203 height=50
+  src="/assets/images/ps_new_logo.jpg" v:shapes="�ٻ�Ҿ_x0020_1"></span><![endif]><span
+  style='mso-ignore:vglayout2'>
+  <table cellpadding=0 cellspacing=0>
+   <tr>
+    <td colspan=10 height=57 class=xl8130927 width=770 style='height:42.75pt;
+    width:580pt'>&nbsp;</td>
+   </tr>
+  </table>
+  </span></td>
+ </tr>
+ <tr height=16 style='mso-height-source:userset;height:12.0pt'>
+  <td colspan=10 height=16 class=xl13030927 style='border-right:.5pt solid black;
+  border-bottom:.5pt solid black;height:12.0pt'>ประวัติชาวไร่ บริษัท นำตาลพิษณุโลก จำกัด</td>
+ </tr>
+ <tr height=16 style='mso-height-source:userset;height:12.0pt'>
+  <td colspan=2 height=16 class=xl13730927 style='height:12.0pt'>ชื่อ - นามสกุล</td>
+  <td colspan=2 class=xl8430927><%= fullName %></td>
+  <td class=xl8430927 style='border-top:none;border-left:none'>เกิดวันที่</td>
+  <td class=xl8430927 style='border-top:none;border-left:none'><%= DateOfBirth %></td>
+  <td class=xl8430927 style='border-top:none;border-left:none'>อายุ</td>
+  <td class=xl8430927 style='border-top:none;border-left:none'></td>
+  <td colspan=2 rowspan=7 class=xl7630927 style='border-right:.5pt solid black; border-bottom:.5pt solid black'>
+    <img src="<%= img %>" width="130" height="150" alt=""></td>
+ </tr>
+ <tr height=16 style='mso-height-source:userset;height:12.0pt'>
+  <td colspan=2 height=16 class=xl13830927 style='height:12.0pt'>หมายเลขบัตรประชาชน</td>
+  <td colspan=2 class=xl8430927><%= idCard %></td>
+  <td class=xl8430927 style='border-top:none;border-left:none'>เบอร์ติดต่อ</td>
+  <td class=xl8430927 style='border-top:none;border-left:none'><%= farmar.Phone %></td>
+  <td class=xl8430927 style='border-top:none;border-left:none'>เบอร์มือถือ</td>
+  <td class=xl8430927 style='border-top:none;border-left:none'><%= farmar.Tel %></td>
+ </tr>
+ <tr height=16 style='mso-height-source:userset;height:12.0pt'>
+  <td colspan=2 height=16 class=xl13830927 style='height:12.0pt'>ที่อยู่</td>
+  <td colspan=6 class=xl15430927><%= addNo %> <%= road %> <%= village %> <%= moo %> <%= tambon %> <%= amphur %> <%= province %> <%= zipcode %></td>
+ </tr>
+ <tr height=16 style='mso-height-source:userset;height:12.0pt'>
+  <td colspan=2 height=16 class=xl13830927 style='height:12.0pt'>บัตรชาวไร่เลขที่</td>
+  <td colspan=2 class=xl8430927><%= idFarm %></td>
+  <td class=xl8430927 style='border-top:none;border-left:none'>หัวหน้ากลุ่ม</td>
+  <td class=xl8430927 style='border-top:none;border-left:none'></td>
+  <td class=xl8430927 style='border-top:none;border-left:none'>โควตาลูกกลุ่ม</td>
+  <td class=xl15430927 style='border-top:none;border-left:none'></td>
+ </tr>
+ <tr height=16 style='mso-height-source:userset;height:12.0pt'>
+  <td colspan=2 height=16 class=xl13830927 style='height:12.0pt'>โควตาโรงงาน</td>
+  <td class=xl8430927 style='border-top:none'><%= quota %></td>
+  <td class=xl8430927 style='border-top:none;border-left:none'>เขตส่งเสริมที่</td>
+  <td class=xl8430927 style='border-top:none;border-left:none'><%= subZone %></td>
+  <td class=xl8430927 style='border-top:none;border-left:none'>อาชีพ อื่นๆ</td>
+  <td colspan=2 class=xl15430927 style='border-left:none'></td>
+ </tr>
+ <tr height=16 style='mso-height-source:userset;height:12.0pt'>
+  <td colspan=2 height=16 class=xl13830927 style='height:12.0pt'>ชื่อ - นามสกุล (ทายาท)</td>
+  <td colspan=2 class=xl8430927>&nbsp;</td>
+  <td colspan=2 class=xl8430927 style='border-left:none'>&nbsp;</td>
+  <td colspan=2 class=xl8430927 style='border-left:none'>&nbsp;</td>
+ </tr>
+ <tr height=16 style='mso-height-source:userset;height:12.0pt'>
+  <td colspan=2 height=16 class=xl13930927 style='height:12.0pt'>&nbsp;</td>
+  <td colspan=2 class=xl13630927 style='border-right:.5pt hairline black'>( ) ส่งอ้อยโรงงานเดียว</td>
+  <td colspan=2 class=xl14930927 style='border-right:.5pt hairline black;
+  border-left:none'>( ) ส่งอ้อย 2 โรงงาน</td>
+  <td colspan=2 class=xl15130927 style='border-right:.5pt solid black;
+  border-left:none'>( ) ส่งอ้อยมากกว่า 2 โรงงาน</td>
+ </tr>
+ <tr height=16 style='mso-height-source:userset;height:12.0pt'>
+  <td colspan=10 height=16 class=xl13230927 style='height:12.0pt'>ข้อมูลทรัพย์สิน</td>
+ </tr>
+ <tr height=16 style='mso-height-source:userset;height:12.0pt'>
+  <td colspan=3 height=16 class=xl9230927 style='height:12.0pt'>ประเภท</td>
+  <td class=xl9430927 style='border-top:none'>จำนวน</td>
+  <td colspan=4 class=xl9530927>รายละเอียด</td>
+  <td colspan=2 class=xl9630927 style='border-right:.5pt solid black'>มูลค่า</td>
+ </tr>
+ <tr height=16 style='mso-height-source:userset;height:12.0pt'>
+  <td colspan=3 height=16 class=xl14330927 style='height:12.0pt'>ที่ดิน หรือ สิ่งปลูกสร้าง</td>
+  <td class=xl10530927 style='border-top:none'><%= %></td>
+  <td colspan=4 class=xl12530927>-</td>
+  <td colspan=2 class=xl11630927 style='border-right:.5pt solid black'><%= %></td>
+ </tr>
+ <tr height=16 style='mso-height-source:userset;height:12.0pt'>
+  <td colspan=3 height=16 class=xl12730927 style='height:12.0pt'>รถยนต์ หรือ รถบรรทุก</td>
+  <td class=xl10630927 style='border-top:none'><%=  %></td>
+  <td colspan=4 class=xl12630927>-</td>
+  <td colspan=2 class=xl11630927 style='border-right:.5pt solid black'><%= %></td>
+ </tr>
+ <tr height=16 style='mso-height-source:userset;height:12.0pt'>
+  <td colspan=3 height=16 class=xl12730927 style='height:12.0pt'>รถแทรกเตอร์ หรือ รถตัดอ้อย</td>
+  <td class=xl10630927 style='border-top:none'><%= %></td>
+  <td colspan=4 class=xl12630927>-</td>
+  <td colspan=2 class=xl11630927 style='border-right:.5pt solid black'><%= %></td>
+ </tr>
+ 
+ <tr height=16 style='mso-height-source:userset;height:12.0pt'>
+  <td colspan=3 height=16 class=xl14430927 style='height:12.0pt'>อื่นๆ</td>
+  <td class=xl10830927><%= %></td>
+  <td colspan=4 class=xl12930927>-</td>
+  <td colspan=2 class=xl15530927 style='border-right:.5pt solid black'><%= %></td>
+ </tr>
+ <tr height=16 style='mso-height-source:userset;height:12.0pt'>
+  <td colspan=3 height=16 class=xl8630927 style='height:12.0pt'>รวม</td>
+  <td class=xl10930927><%= %></td>
+  <td colspan=4 class=xl11030927>&nbsp;</td>
+  <td colspan=2 class=xl15730927><%= %></td>
+ </tr>
+ <tr height=16 style='mso-height-source:userset;height:12.0pt'>
+  <td colspan=10 height=16 class=xl7530927 style='height:12.0pt'>การทำสัญญา/การส่งอ้อย/การรับเงินส่งเสริม</td>
+ </tr>
+ <tr height=16 style='mso-height-source:userset;height:12.0pt'>
+  <td height=16 class=xl12030927 style='height:12.0pt'>ปี การผลิต</td>
+  <td class=xl9830927>สัญญา</td>
+  <td class=xl9930927><span style='mso-spacerun:yes'>&nbsp;</span> ส่งอ้อยสด</td>
+  <td class=xl9830927>ส่งอ้อยไฟไฟม้</td>
+  <td class=xl9930927>% สัญญา</td>
+  <td class=xl9830927>เกรดชาวไร่</td>
+  <td class=xl9930927>เงินส่งเสริม</td>
+  <td class=xl9830927>เงินโครงการ<span style='mso-spacerun:yes'>&nbsp;</span></td>
+  <td class=xl9930927>คงค้างทั้งสิ้น</td>
+  <td class=xl9830927>เฉลี่ยบาท/ตัน</td>
+ </tr>
+ <tr height=16 style='mso-height-source:userset;height:12.0pt'>
+  <td height=16 class=xl12130927 style='height:12.0pt;border-top:none'>2560/61</td>
+  <td class=xl12230927><%= 0.00 %></td>
+  <td class=xl7430927><%= 0.00 %></td>
+  <td class=xl12330927><%= 0.00 %></td>
+  <td class=xl7430927><%= 0.00 %></td>
+  <td class=xl13330927><%= %></td>
+  <td class=xl7430927><%= 0.00 %></td>
+  <td class=xl12330927><%= 0.00 %></td>
+  <td class=xl7430927><%= 0.00 %></td>
+  <td class=xl12330927><%= 0.00 %></td>
+ </tr>
+ <tr height=16 style='mso-height-source:userset;height:12.0pt'>
+  <td height=16 class=xl9130927 style='height:12.0pt'>2561/62</td>
+  <td class=xl12330927><%= 0.00 %></td>
+  <td class=xl7430927><%= 0.00 %></td>
+  <td class=xl12330927><%= 0.00 %></td>
+  <td class=xl7430927><%= 0.00 %></td>
+  <td class=xl13330927><%= %></td>
+  <td class=xl7430927><%= 0.00 %></td>
+  <td class=xl12330927><%= 0.00 %></td>
+  <td class=xl7430927><%= 0.00 %></td>
+  <td class=xl12330927><%= 0.00 %></td>
+ </tr>
+ <tr height=16 style='mso-height-source:userset;height:12.0pt'>
+  <td height=16 class=xl9130927 style='height:12.0pt'>2562/63</td>
+  <td class=xl12330927><%= parseFloat(Number(CaneHistory.history1_ton_contract)).toLocaleString(undefined,{ minimumFractionDigits: 2 }) %></td>
+  <td class=xl7430927><%= parseFloat(Number(CaneHistory.history1_ton_real)).toLocaleString(undefined,{ minimumFractionDigits: 2 }) %></td>
+  <td class=xl12330927><%= 0.00 %></td>
+  <td class=xl7430927><%= parseFloat(Number(CaneHistory.history1_ton_per * 100)).toLocaleString(undefined,{ minimumFractionDigits: 2 }) %> %</td>
+  <td class=xl13330927 style='border-top:none'><%= CaneHistory.history1_grad %></td>
+  <td class=xl7430927><%= parseFloat(Number(CaneHistory.history1_money)).toLocaleString(undefined,{ minimumFractionDigits: 2 })  %></td>
+  <td class=xl12330927><%= 0.00 %></td>
+  <td class=xl7430927><%= 0.00 %></td>
+  <td class=xl12330927><%= 0.00 %></td>
+ </tr>
+ <tr height=16 style='mso-height-source:userset;height:12.0pt'>
+  <td height=16 class=xl9130927 style='height:12.0pt'>2563/64</td>
+  <td class=xl12330927><%= parseFloat(Number(CaneHistory.history2_ton_contract)).toLocaleString(undefined,{ minimumFractionDigits: 2 }) %></td>
+  <td class=xl7430927><%= parseFloat(Number(CaneHistory.history2_ton_real)).toLocaleString(undefined,{ minimumFractionDigits: 2 }) %></td>
+  <td class=xl12330927><%= 0.00 %></td>
+  <td class=xl7430927><%= parseFloat(Number(CaneHistory.history2_ton_per * 100)).toLocaleString(undefined,{ minimumFractionDigits: 2 }) %> %</td>
+  <td class=xl13330927 style='border-top:none'><%= CaneHistory.history2_grad %></td>
+  <td class=xl7430927><%= parseFloat(Number(CaneHistory.history2_money)).toLocaleString(undefined,{ minimumFractionDigits: 2 })  %></td>
+  <td class=xl12330927><%= 0.00 %></td>
+  <td class=xl7430927><%= 0.00 %></td>
+  <td class=xl12330927><%= 0.00 %></td>
+ </tr>
+ <tr height=16 style='mso-height-source:userset;height:12.0pt'>
+  <td height=16 class=xl9130927 style='height:12.0pt'>2564/65</td>
+  <td class=xl12330927><%= parseFloat(Number(CaneHistory.history3_ton_contract)).toLocaleString(undefined,{ minimumFractionDigits: 2 }) %></td>
+  <td class=xl7430927><%= parseFloat(Number(CaneHistory.history3_ton_real)).toLocaleString(undefined,{ minimumFractionDigits: 2 }) %></td>
+  <td class=xl12330927><%= 0.00 %></td>
+  <td class=xl7430927><%= parseFloat(Number(CaneHistory.history3_ton_per * 100)).toLocaleString(undefined,{ minimumFractionDigits: 2 }) %> %</td>
+  <td class=xl13330927 style='border-top:none'><%= CaneHistory.history3_grad %></td>
+  <td class=xl7430927><%= parseFloat(Number(CaneHistory.history3_money)).toLocaleString(undefined,{ minimumFractionDigits: 2 })  %></td>
+  <td class=xl12330927><%= 0.00 %></td>
+  <td class=xl7430927><%= 0.00 %></td>
+  <td class=xl12330927><%= 0.00 %></td>
+ </tr>
+ <tr height=16 style='mso-height-source:userset;height:12.0pt'>
+  <td height=16 class=xl9130927 style='height:12.0pt'>2565/66</td>
+  <td class=xl12330927><%= parseFloat(Number(CaneHistory.history4_ton_contract)).toLocaleString(undefined,{ minimumFractionDigits: 2 }) %></td>
+  <td class=xl7430927><%= parseFloat(Number(CaneHistory.history4_ton_real)).toLocaleString(undefined,{ minimumFractionDigits: 2 }) %></td>
+  <td class=xl12330927><%= 0.00 %></td>
+  <td class=xl7430927><%= parseFloat(Number(CaneHistory.history4_ton_per * 100)).toLocaleString(undefined,{ minimumFractionDigits: 2 }) %> %</td>
+  <td class=xl13330927 style='border-top:none'><%= CaneHistory.history4_grad %></td>
+  <td class=xl7430927><%= parseFloat(Number(CaneHistory.history4_money)).toLocaleString(undefined,{ minimumFractionDigits: 2 })  %></td>
+  <td class=xl12330927><%= 0.00 %></td>
+  <td class=xl7430927><%= DebtHistory.deduct3_total %></td>
+  <td class=xl12330927><%= 0.00 %></td>
+ </tr>
+ <tr height=16 style='mso-height-source:userset;height:12.0pt'>
+  <td height=16 class=xl9130927 style='height:12.0pt'>2566/67</td>
+  <td class=xl12330927><%= 0.00 %></td>
+  <td class=xl7430927><%= 0.00 %></td>
+  <td class=xl12330927><%= 0.00 %></td>
+  <td class=xl7430927><%= 0.00 %> %</td>
+  <td class=xl13330927 style='border-top:none'><%= %></td>
+  <td class=xl7430927><%= 0.00 %></td>
+  <td class=xl12330927><%= 0.00 %></td>
+  <td class=xl7430927><%= 0.00 %></td>
+  <td class=xl12330927><%= 0.00 %></td>
+ </tr>
+ <tr height=16 style='mso-height-source:userset;height:12.0pt'>
+  <td height=16 class=xl8630927 style='height:12.0pt'>รวม</td>
+  <td class=xl11930927><%= parseFloat(Number(CaneHistory.history1_ton_contract+CaneHistory.history2_ton_contract+CaneHistory.history3_ton_contract+CaneHistory.history4_ton_contract)).toLocaleString(undefined,{ minimumFractionDigits: 2 }) %></td>
+  <td class=xl11830927><%= parseFloat(Number(CaneHistory.history1_ton_real+CaneHistory.history2_ton_real+CaneHistory.history3_ton_real+CaneHistory.history4_ton_real)).toLocaleString(undefined,{ minimumFractionDigits: 2 }) %></td>
+  <td class=xl11930927><%= 0.00 %></td>
+  <td class=xl11830927><%= parseFloat(Number((CaneHistory.history1_ton_real+CaneHistory.history2_ton_real+CaneHistory.history3_ton_real+CaneHistory.history4_ton_real)*100/(CaneHistory.history1_ton_contract+CaneHistory.history2_ton_contract+CaneHistory.history3_ton_contract+CaneHistory.history4_ton_contract))).toLocaleString(undefined,{ minimumFractionDigits: 2 }) %> %</td>
+  <td class=xl8430927><%= %></td>
+  <td class=xl11830927><%= parseFloat(Number(CaneHistory.history1_money+CaneHistory.history2_money+CaneHistory.history3_money+CaneHistory.history4_money)).toLocaleString(undefined,{ minimumFractionDigits: 2 }) %></td>
+  <td class=xl11930927><%= 0.00 %></td>
+  <td class=xl11830927><%= 0.00 %></td>
+  <td class=xl11930927><%= 0.00 %></td>
+ </tr>
+ <tr height=16 style='mso-height-source:userset;height:12.0pt'>
+  <td colspan=10 height=16 class=xl7530927 style='height:12.0pt'>พื้นที่ปลูกอ้อย</td>
+ </tr>
+ <tr height=16 style='mso-height-source:userset;height:12.0pt'>
+  <td colspan=2 height=16 class=xl10030927 style='height:12.0pt'>ประเภทพื้นที่</td>
+  <td class=xl10230927>2560/61</td>
+  <td class=xl10130927>2561/62</td>
+  <td class=xl10230927>2562/63</td>
+  <td class=xl10130927>2563/64</td>
+  <td class=xl10230927>2564/65</td>
+  <td class=xl10130927>2565/66</td>
+  <td class=xl10230927>2566/67</td>
+  <td class=xl10330927>รวมพื้นที่</td>
+ </tr>
+ <tr height=16 style='mso-height-source:userset;height:12.0pt'>
+  <td colspan=2 height=16 class=xl13430927 style='height:12.0pt'>อ้อยปลายฝนพื้นที่ใหม่ PS Model</td>
+  <td class=xl12430927 style='border-top:none'><%= 0.00 %></td>
+  <td class=xl7330927><%= 0.00 %></td>
+  <td class=xl12230927><%= 0.00 %></td>
+  <td class=xl7330927><%= 0.00 %></td>
+  <td class=xl12230927><%= 0.00 %></td>
+  <td class=xl7330927><%= 0.00 %></td>
+  <td class=xl12230927><%= 0.00 %></td>
+  <td class=xl12230927 style='border-left:none'><%= %></td>
+ </tr>
+ <tr height=16 style='mso-height-source:userset;height:12.0pt'>
+  <td colspan=2 height=16 class=xl13530927 style='height:12.0pt'>อ้อยปลายฝน</td>
+  <td class=xl12330927><%= 0.00 %></td>
+  <td class=xl7430927><%= 0.00 %></td>
+  <td class=xl12330927><%= parseFloat(Number(CaneHistory.history1_canetype01)).toLocaleString(undefined,{ minimumFractionDigits: 2 }) %></td>
+  <td class=xl7430927><%= parseFloat(Number(CaneHistory.history2_canetype01)).toLocaleString(undefined,{ minimumFractionDigits: 2 }) %></td>
+  <td class=xl12330927><%= parseFloat(Number(CaneHistory.history3_canetype01)).toLocaleString(undefined,{ minimumFractionDigits: 2 }) %></td>
+  <td class=xl7430927><%= parseFloat(Number(CaneHistory.history4_canetype01)).toLocaleString(undefined,{ minimumFractionDigits: 2 }) %></td>
+  <td class=xl12330927><%= 0.00 %></td>
+  <td class=xl12330927><%= parseFloat(Number(CaneHistory.history1_canetype01+CaneHistory.history2_canetype01+CaneHistory.history3_canetype01+CaneHistory.history4_canetype01)).toLocaleString(undefined,{ minimumFractionDigits: 2 }) %></td>
+ </tr>
+ <tr height=16 style='mso-height-source:userset;height:12.0pt'>
+  <td colspan=2 height=16 class=xl13530927 style='height:12.0pt'>อ้อยปลายฝนรื้อตอ</td>
+  <td class=xl12330927><%= 0.00 %></td>
+  <td class=xl7430927><%= 0.00 %></td>
+  <td class=xl12330927><%= parseFloat(Number(CaneHistory.history1_canetype02)).toLocaleString(undefined,{ minimumFractionDigits: 2 }) %></td>
+  <td class=xl7430927><%= parseFloat(Number(CaneHistory.history2_canetype02)).toLocaleString(undefined,{ minimumFractionDigits: 2 }) %></td>
+  <td class=xl12330927><%= parseFloat(Number(CaneHistory.history3_canetype02)).toLocaleString(undefined,{ minimumFractionDigits: 2 }) %></td>
+  <td class=xl7430927><%= parseFloat(Number(CaneHistory.history4_canetype02)).toLocaleString(undefined,{ minimumFractionDigits: 2 }) %></td>
+  <td class=xl12330927><%= 0.00 %></td>
+  <td class=xl12330927><%= parseFloat(Number(CaneHistory.history1_canetype02+CaneHistory.history2_canetype02+CaneHistory.history3_canetype02+CaneHistory.history4_canetype02)).toLocaleString(undefined,{ minimumFractionDigits: 2 }) %></td>
+ </tr>
+ <tr height=16 style='mso-height-source:userset;height:12.0pt'>
+  <td colspan=2 height=16 class=xl13530927 style='height:12.0pt'>อ้อยต้นฝน</td>
+  <td class=xl12330927><%= 0.00 %></td>
+  <td class=xl7430927><%= 0.00 %></td>
+  <td class=xl12330927><%= parseFloat(Number(CaneHistory.history1_canetype03)).toLocaleString(undefined,{ minimumFractionDigits: 2 }) %></td>
+  <td class=xl7430927><%= parseFloat(Number(CaneHistory.history2_canetype03)).toLocaleString(undefined,{ minimumFractionDigits: 2 }) %></td>
+  <td class=xl12330927><%= parseFloat(Number(CaneHistory.history3_canetype03)).toLocaleString(undefined,{ minimumFractionDigits: 2 }) %></td>
+  <td class=xl7430927><%= parseFloat(Number(CaneHistory.history4_canetype03)).toLocaleString(undefined,{ minimumFractionDigits: 2 }) %></td>
+  <td class=xl12330927><%= 0.00 %></td>
+  <td class=xl12330927><%= parseFloat(Number(CaneHistory.history1_canetype03+CaneHistory.history2_canetype03+CaneHistory.history3_canetype03+CaneHistory.history4_canetype03)).toLocaleString(undefined,{ minimumFractionDigits: 2 }) %></td>
+ </tr>
+ <tr height=16 style='mso-height-source:userset;height:12.0pt'>
+  <td colspan=2 height=16 class=xl13530927 style='height:12.0pt'>อ้อยตอ 1</td>
+  <td class=xl12330927><%= 0.00 %></td>
+  <td class=xl7430927><%= 0.00 %></td>
+  <td class=xl12330927><%= parseFloat(Number(CaneHistory.history1_canetype04)).toLocaleString(undefined,{ minimumFractionDigits: 2 }) %></td>
+  <td class=xl7430927><%= parseFloat(Number(CaneHistory.history2_canetype04)).toLocaleString(undefined,{ minimumFractionDigits: 2 }) %></td>
+  <td class=xl12330927><%= parseFloat(Number(CaneHistory.history3_canetype04)).toLocaleString(undefined,{ minimumFractionDigits: 2 }) %></td>
+  <td class=xl7430927><%= parseFloat(Number(CaneHistory.history4_canetype04)).toLocaleString(undefined,{ minimumFractionDigits: 2 }) %></td>
+  <td class=xl12330927><%= 0.00 %></td>
+  <td class=xl12330927><%= parseFloat(Number(CaneHistory.history1_canetype04+CaneHistory.history2_canetype04+CaneHistory.history3_canetype04+CaneHistory.history4_canetype04)).toLocaleString(undefined,{ minimumFractionDigits: 2 }) %></td>
+ </tr>
+ <tr height=16 style='mso-height-source:userset;height:12.0pt'>
+  <td colspan=2 height=16 class=xl13530927 style='height:12.0pt'>อ้อยตอ 2</td>
+  <td class=xl12330927><%= 0.00 %></td>
+  <td class=xl7430927><%= 0.00 %></td>
+  <td class=xl12330927><%= parseFloat(Number(CaneHistory.history1_canetype05)).toLocaleString(undefined,{ minimumFractionDigits: 2 }) %></td>
+  <td class=xl7430927><%= parseFloat(Number(CaneHistory.history2_canetype05)).toLocaleString(undefined,{ minimumFractionDigits: 2 }) %></td>
+  <td class=xl12330927><%= parseFloat(Number(CaneHistory.history3_canetype05)).toLocaleString(undefined,{ minimumFractionDigits: 2 }) %></td>
+  <td class=xl7430927><%= parseFloat(Number(CaneHistory.history4_canetype05)).toLocaleString(undefined,{ minimumFractionDigits: 2 }) %></td>
+  <td class=xl12330927><%= 0.00 %></td>
+  <td class=xl12330927><%= parseFloat(Number(CaneHistory.history1_canetype05+CaneHistory.history2_canetype05+CaneHistory.history3_canetype05+CaneHistory.history4_canetype05)).toLocaleString(undefined,{ minimumFractionDigits: 2 }) %></td>
+ </tr>
+ <tr height=16 style='mso-height-source:userset;height:12.0pt'>
+  <td colspan=2 height=16 class=xl13530927 style='height:12.0pt'>อ้อยตอ 3+</td>
+  <td class=xl12330927><%= 0.00 %></td>
+  <td class=xl7430927><%= 0.00 %></td>
+  <td class=xl12330927><%= parseFloat(Number(CaneHistory.history1_canetype06)).toLocaleString(undefined,{ minimumFractionDigits: 2 }) %></td>
+  <td class=xl7430927><%= parseFloat(Number(CaneHistory.history2_canetype06)).toLocaleString(undefined,{ minimumFractionDigits: 2 }) %></td>
+  <td class=xl12330927><%= parseFloat(Number(CaneHistory.history3_canetype06)).toLocaleString(undefined,{ minimumFractionDigits: 2 }) %></td>
+  <td class=xl7430927><%= parseFloat(Number(CaneHistory.history4_canetype06)).toLocaleString(undefined,{ minimumFractionDigits: 2 }) %></td>
+  <td class=xl12330927><%= 0.00 %></td>
+  <td class=xl12330927><%= parseFloat(Number(CaneHistory.history1_canetype06+CaneHistory.history2_canetype06+CaneHistory.history3_canetype06+CaneHistory.history4_canetype06)).toLocaleString(undefined,{ minimumFractionDigits: 2 }) %></td>
+ </tr>
+ <tr height=16 style='mso-height-source:userset;height:12.0pt'>
+  <td colspan=2 height=16 class=xl8630927 style='height:12.0pt'>รวม</td>
+  <td class=xl11930927><%= 0.00 %></td>
+  <td class=xl11830927><%= 0.00 %></td>
+  <td class=xl11930927><%= parseFloat(Number(CaneHistory.history1_canetype01+CaneHistory.history1_canetype02+CaneHistory.history1_canetype03+CaneHistory.history1_canetype03+CaneHistory.history1_canetype04+CaneHistory.history1_canetype05+CaneHistory.history1_canetype06)).toLocaleString(undefined,{ minimumFractionDigits: 2 }) %></td>
+  <td class=xl11830927><%= parseFloat(Number(CaneHistory.history2_canetype01+CaneHistory.history2_canetype02+CaneHistory.history2_canetype03+CaneHistory.history2_canetype03+CaneHistory.history2_canetype04+CaneHistory.history2_canetype05+CaneHistory.history2_canetype06)).toLocaleString(undefined,{ minimumFractionDigits: 2 }) %></td>
+  <td class=xl11930927><%= parseFloat(Number(CaneHistory.history3_canetype01+CaneHistory.history3_canetype02+CaneHistory.history3_canetype03+CaneHistory.history3_canetype03+CaneHistory.history3_canetype04+CaneHistory.history3_canetype05+CaneHistory.history3_canetype06)).toLocaleString(undefined,{ minimumFractionDigits: 2 }) %></td>
+  <td class=xl11830927><%= parseFloat(Number(CaneHistory.history4_canetype01+CaneHistory.history4_canetype02+CaneHistory.history4_canetype03+CaneHistory.history4_canetype03+CaneHistory.history4_canetype04+CaneHistory.history4_canetype05+CaneHistory.history4_canetype06)).toLocaleString(undefined,{ minimumFractionDigits: 2 }) %></td>
+  <td class=xl11930927><%= 0.00 %></td>
+  <td class=xl11930927><%= parseFloat(Number((CaneHistory.history1_canetype01+CaneHistory.history1_canetype02+CaneHistory.history1_canetype03+CaneHistory.history1_canetype03+CaneHistory.history1_canetype04+CaneHistory.history1_canetype05+CaneHistory.history1_canetype06)+(CaneHistory.history2_canetype01+CaneHistory.history2_canetype02+CaneHistory.history2_canetype03+CaneHistory.history2_canetype03+CaneHistory.history2_canetype04+CaneHistory.history2_canetype05+CaneHistory.history2_canetype06)+(CaneHistory.history3_canetype01+CaneHistory.history3_canetype02+CaneHistory.history3_canetype03+CaneHistory.history3_canetype03+CaneHistory.history3_canetype04+CaneHistory.history3_canetype05+CaneHistory.history3_canetype06)+(CaneHistory.history4_canetype01+CaneHistory.history4_canetype02+CaneHistory.history4_canetype03+CaneHistory.history4_canetype03+CaneHistory.history4_canetype04+CaneHistory.history4_canetype05+CaneHistory.history4_canetype06))).toLocaleString(undefined,{ minimumFractionDigits: 2 }) %></td>
+ </tr>
+ <tr height=16 style='mso-height-source:userset;height:12.0pt'>
+  <td colspan=2 height=16 class=xl8630927 style='height:12.0pt'>ใช้บริการรถตัด</td>
+  <td class=xl11930927><%= 0.00 %></td>
+  <td class=xl11830927><%= 0.00 %></td>
+  <td class=xl11930927><%= 0.00 %></td>
+  <td class=xl11830927><%= 0.00 %></td>
+  <td class=xl11930927><%= 0.00 %></td>
+  <td class=xl11830927><%= 0.00 %></td>
+  <td class=xl11930927><%= 0.00 %></td>
+  <td class=xl11930927><%= 0.00 %></td>
+ </tr>
+ <tr height=16 style='mso-height-source:userset;height:12.0pt'>
+  <td colspan=10 height=16 class=xl7530927 style='height:12.0pt'>ข้อมูลเครื่องมือการเกษตร</td>
+ </tr>
+ <tr height=16 style='mso-height-source:userset;height:12.0pt'>
+  <td colspan=2 height=16 class=xl11130927 style='height:12.0pt'>หมวดรถทางการเกษตร</td>
+  <td class=xl10430927>จำนวน<span style='mso-spacerun:yes'>&nbsp;</span></td>
+  <td colspan=2 class=xl11230927>หมวดเครื่องมือ</td>
+  <td class=xl10430927>จำนวน<span style='mso-spacerun:yes'>&nbsp;</span></td>
+  <td colspan=2 class=xl11230927>หมวดเครื่องมือ</td>
+  <td class=xl10430927>จำนวน<span style='mso-spacerun:yes'>&nbsp;</span></td>
+  <td class=xl11330927>&nbsp;</td>
+ </tr>
+ <tr height=16 style='mso-height-source:userset;height:12.0pt'>
+  <td colspan=2 height=16 class=xl13530927 style='height:12.0pt'>1. แทรกเตอร์ ขนาดเล็ก</td>
+  <td class=xl8830927><%= miniTractor %></td>
+  <td colspan=2 class=xl14730927>16. ผานไถ 3 จาน</td>
+  <td class=xl8830927><%= Plow3 %></td>
+  <td colspan=2 class=xl14730927>30. เครื่องปลูกอ้อยร่องเดี่ยว</td>
+  <td class=xl8830927><%= Planting1 %></td>
+  <td class=xl8230927>&nbsp;</td>
+ </tr>
+ <tr height=16 style='mso-height-source:userset;height:12.0pt'>
+  <td colspan=2 height=16 class=xl13530927 style='height:12.0pt'>2. แทรกเตอร์ เพลาเดียว < 90 Hp</td>
+  <td class=xl8830927><%= Tractor1Under90 %></td>
+  <td colspan=2 class=xl14730927>17. ผานไถ 4 จาน</td>
+  <td class=xl8830927><%= Plow4 %></td>
+  <td colspan=2 class=xl14730927>31. เครื่องปลูกอ้อยร่องคู่</td>
+  <td class=xl8830927><%= Planting2 %></td>
+  <td class=xl8230927>&nbsp;</td>
+ </tr>
+ <tr height=16 style='mso-height-source:userset;height:12.0pt'>
+  <td colspan=2 height=16 class=xl13530927 style='height:12.0pt'>3. แทรกเตอร์ เพลาเดียว < 90-120 Hp</td>
+  <td class=xl8830927><%= Tractor1Under120 %></td>
+  <td colspan=2 class=xl14730927>18. แลนเพลน</td>
+  <td class=xl8830927><%= LandPlane %></td>
+  <td colspan=2 class=xl14730927>32. เครื่องปลูกอ้อยท่อน</td>
+  <td class=xl8830927><%= PlantingBillet %></td>
+  <td class=xl8230927>&nbsp;</td>
+ </tr>
+ <tr height=16 style='mso-height-source:userset;height:12.0pt'>
+  <td colspan=2 height=16 class=xl13530927 style='height:12.0pt'>4. แทรกเตอร์ เพลาเดียว ≥ 120 Hp</td>
+  <td class=xl8830927><%= Tractor1Over120 %></td>
+  <td colspan=2 class=xl14730927>19. ริปเปอร์ระเบิดดินดาน 3 ขา</td>
+  <td class=xl8830927><%= Ripper3 %></td>
+  <td colspan=2 class=xl14730927>33. บูมสเปรย์สารเคมี รถเล็ก</td>
+  <td class=xl8830927><%= MiniBoomSpray %></td>
+  <td class=xl8230927>&nbsp;</td>
+ </tr>
+ <tr height=16 style='mso-height-source:userset;height:12.0pt'>
+  <td colspan=2 height=16 class=xl13530927 style='height:12.0pt'>5. แทรกเตอร์ สองเพลา < 90 Hp</td>
+  <td class=xl8830927><%= Tractor2Under90 %></td>
+  <td colspan=2 class=xl14730927>20. ริปเปอร์ระเบิดดินดาน 5 ขา</td>
+  <td class=xl8830927><%= Ripper5 %></td>
+  <td colspan=2 class=xl14730927>34. บูมสเปรย์สารเคมี รถใหญ่</td>
+  <td class=xl8830927><%= BigBoomSpray %></td>
+  <td class=xl8230927>&nbsp;</td>
+ </tr>
+ <tr height=16 style='mso-height-source:userset;height:12.0pt'>
+  <td colspan=2 height=16 class=xl13530927 style='height:12.0pt'>6. แทรกเตอร์ สอเพลา < 90-120 Hp</td>
+  <td class=xl8830927><%= Tractor2Under120 %></td>
+  <td colspan=2 class=xl14730927>21. ริปเปอร์ระเบิดดินดาน 7 ขา</td>
+  <td class=xl8830927><%= Ripper7 %></td>
+  <td colspan=2 class=xl14730927>35. ผานพรวนคลุกใบ</td>
+  <td class=xl8830927><%= PlowMix %></td>
+  <td class=xl8230927>&nbsp;</td>
+ </tr>
+ <tr height=16 style='mso-height-source:userset;height:12.0pt'>
+  <td colspan=2 height=16 class=xl13530927 style='height:12.0pt'>7. แทรกเตอร์ สองเดียว ≥ 120 Hp</td>
+  <td class=xl8830927><%= Tractor2Over120 %></td>
+  <td colspan=2 class=xl14730927>22. ผานไถพรวน 7 จาน</td>
+  <td class=xl8830927><%= Plow7 %></td>
+  <td colspan=2 class=xl14730927>36. คัทอะเวย์</td>
+  <td class=xl8830927><%= CutaWay %></td>
+  <td class=xl8230927>&nbsp;</td>
+ </tr>
+ <tr height=16 style='mso-height-source:userset;height:12.0pt'>
+  <td colspan=2 height=16 class=xl13530927 style='height:12.0pt'>8. รถสาลี่ลาก</td>
+  <td class=xl8830927><%= WheelBarrow %></td>
+  <td colspan=2 class=xl14730927>23. ผานไถพรวน 10 จาน</td>
+  <td class=xl8830927><%= Plow10 %></td>
+  <td colspan=2 class=xl14730927>37. คราดสปริง (SRT6)</td>
+  <td class=xl8830927><%= SpringRake %></td>
+  <td class=xl8230927>&nbsp;</td>
+ </tr>
+ <tr height=16 style='mso-height-source:userset;height:12.0pt'>
+  <td colspan=2 height=16 class=xl13530927 style='height:12.0pt'>9. รถหกล้อ</td>
+  <td class=xl8830927><%= Wheels6 %></td>
+  <td colspan=2 class=xl14730927>24. ผานไถพรวน 18 จาน</td>
+  <td class=xl8830927><%= Plow18 %></td>
+  <td colspan=2 class=xl14730927>38. จานพรวนเล็ก</td>
+  <td class=xl8830927><%= SmallPlate %></td>
+  <td class=xl8230927>&nbsp;</td>
+ </tr>
+ <tr height=16 style='mso-height-source:userset;height:12.0pt'>
+  <td colspan=2 height=16 class=xl13530927 style='height:12.0pt'>10. รถสิบล้อเดี่ยว</td>
+  <td class=xl8830927><%= Wheeler10Single %></td>
+  <td colspan=2 class=xl14730927>25. ผานไถพรวน 20 จาน</td>
+  <td class=xl8830927><%= Plow20 %></td>
+  <td colspan=2 class=xl14730927>39. จอบหมุนเล็ก</td>
+  <td class=xl8830927><%= SmallRotaryHoe %></td>
+  <td class=xl8230927>&nbsp;</td>
+ </tr>
+ <tr height=16 style='mso-height-source:userset;height:12.0pt'>
+  <td colspan=2 height=16 class=xl13530927 style='height:12.0pt'>11. รถสิบล้อพ่วง</td>
+  <td class=xl8830927><%= Wheeler10Trailer %></td>
+  <td colspan=2 class=xl14730927>26. ผานไถพรวน 24 จาน</td>
+  <td class=xl8830927><%= Plow24 %></td>
+  <td colspan=2 class=xl14730927>40. จอบหมุนใหญ่</td>
+  <td class=xl8830927><%= BigRotaryHoe %></td>
+  <td class=xl8230927>&nbsp;</td>
+ </tr>
+ <tr height=16 style='mso-height-source:userset;height:12.0pt'>
+  <td colspan=2 height=16 class=xl13530927 style='height:12.0pt'>12. รถไถคีบอ้อย</td>
+  <td class=xl8830927><%= ForkOverTractor %></td>
+  <td colspan=2 class=xl14730927>27. มินิคอมบาน์</td>
+  <td class=xl8830927><%= MiniCombo %></td>
+  <td colspan=2 class=xl14730927>41. เครื่องใส่ปุ๋ยกลางร่อง</td>
+  <td class=xl8830927><%= MiddleGrooveFertilizer %></td>
+  <td class=xl8230927>&nbsp;</td>
+ </tr>
+ <tr height=16 style='mso-height-source:userset;height:12.0pt'>
+  <td colspan=2 height=16 class=xl13530927 style='height:12.0pt'>13. รถคีบอ้อย สามล้อ</td>
+  <td class=xl8830927><%= ForOverWheeler3 %></td>
+  <td colspan=2 class=xl14730927>28. พาวเวอร์แฮโร่</td>
+  <td class=xl8830927><%= HaroPower %></td>
+  <td colspan=2 class=xl14730927>42. เครื่องสางใบ</td>
+  <td class=xl8830927><%= CardingMachine %></td>
+  <td class=xl8230927>&nbsp;</td>
+ </tr>
+ <tr height=16 style='mso-height-source:userset;height:12.0pt'>
+  <td colspan=2 height=16 class=xl13530927 style='height:12.0pt'>14. รถตัดเล็ก < 300 Hp</td>
+  <td class=xl8830927><%= CutterUnder300 %></td>
+  <td colspan=2 class=xl14730927>29. โรตารี่</td>
+  <td class=xl8830927><%= Rotary %></td>
+  <td colspan=2 class=xl14730927>43. เครื่องตัดวางกอง</td>
+  <td class=xl8830927><%= CuttingMachineLayingPiles %></td>
+  <td class=xl8230927>&nbsp;</td>
+ </tr>
+ <tr height=16 style='mso-height-source:userset;height:12.0pt'>
+  <td colspan=2 height=16 class=xl13630927 style='height:12.0pt'>15. รถตัดใหญ่ ≥ 300 Hp</td>
+  <td class=xl8930927><%= CutterOver300 %></td>
+  <td colspan=2 class=xl14830927>&nbsp;</td>
+  <td class=xl8930927>&nbsp;</td>
+  <td colspan=2 class=xl14830927>&nbsp;</td>
+  <td class=xl8930927>&nbsp;</td>
+  <td class=xl9030927>&nbsp;</td>
+ </tr>
+ <tr height=16 style='mso-height-source:userset;height:12.0pt'>
+  <td height=16 class=xl8030927 style='height:12.0pt'></td>
+  <td class=xl8030927></td>
+  <td class=xl8030927></td>
+  <td class=xl8030927></td>
+  <td class=xl8030927></td>
+  <td class=xl8030927></td>
+  <td class=xl8030927></td>
+  <td class=xl8030927></td>
+  <td class=xl8030927></td>
+  <td class=xl8030927></td>
+ </tr>
+ <![if supportMisalignedColumns]>
+ <tr height=0 style='display:none'>
+  <td width=77 style='width:58pt'></td>
+  <td width=77 style='width:58pt'></td>
+  <td width=77 style='width:58pt'></td>
+  <td width=77 style='width:58pt'></td>
+  <td width=77 style='width:58pt'></td>
+  <td width=77 style='width:58pt'></td>
+  <td width=77 style='width:58pt'></td>
+  <td width=77 style='width:58pt'></td>
+  <td width=77 style='width:58pt'></td>
+  <td width=77 style='width:58pt'></td>
+ </tr>
+ <![endif]>
+</table>
+  </div>
+</body>
+</html>

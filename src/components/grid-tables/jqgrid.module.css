@@ -1,0 +1,270 @@
+.ui-jqgrid-btable>tbody>tr.table-success {
+  background-color: #E4EFC9;
+ }
+ .table-hover.ui-jqgrid-btable>tbody>tr.active:hover>td,
+ .table-hover.ui-jqgrid-btable>tbody>tr.active:hover>th,
+ .table-hover.ui-jqgrid-btable>tbody>tr:hover>.active,
+ .table-hover.ui-jqgrid-btable>tbody>tr>td.active:hover,
+ .table-hover.ui-jqgrid-btable>tbody>tr>th.active:hover {
+     background-color: #EFF4F7;
+ }
+ .table-hover.ui-jqgrid-btable>tbody>tr.active.table-success:hover>td,
+ .table-hover.ui-jqgrid-btable>tbody>tr.active.table-success:hover>th,
+ .table-hover.ui-jqgrid-btable>tbody>tr:hover>.active.table-success,
+ .table-hover.ui-jqgrid-btable>tbody>tr>td.active.table-success:hover,
+ .table-hover.ui-jqgrid-btable>tbody>tr>th.active.table-success:hover {
+     background-color: #D8E8B0;
+ }
+ 
+ .ui-jqgrid-bootstrap.ui-jqgrid>.ui-jqgrid-view>.ui-jqgrid-titlebar {
+     color: #FFF;
+     background: #307ECC;
+     font-size: 15px;
+     padding: .55em .55em .7em;
+ }
+ .ui-jqgrid.ui-jqgrid-bootstrap > .ui-jqgrid-view {
+     font-size: 13px;
+ }
+ .ui-jqgrid .ui-jqgrid-htable th {
+     padding: .5em ;
+ }
+ 
+ .ui-jqgrid-actions>.ui-inline-save,
+ .ui-jqgrid-actions>.ui-inline-save:hover {
+     background-color: inherit;
+     color: #69AA46;
+ }
+ .ui-jqgrid-actions>.ui-inline-cancel,
+ .ui-jqgrid-actions>.ui-inline-cancel:hover {
+     background-color: inherit;
+     color: #DD5A43;
+ }
+ .ui-jqgrid-actions>.ui-inline-edit,
+ .ui-jqgrid-actions>.ui-inline-edit:hover,
+ .navtable>.ui-pg-button[id^=edit_] {
+     background-color: inherit;
+     color: #478FCA;
+ }
+ .ui-jqgrid-actions>.ui-inline-del,
+ .ui-jqgrid-actions>.ui-inline-del:hover,
+ .navtable>.ui-pg-button[id^=del_] {
+     background-color: inherit;
+     color: #DD5A43;
+ }
+ .navtable>.ui-pg-button[id^=search_] {
+     color: #FF892A;
+ }
+ .navtable>.ui-pg-button[id^=refresh_] {
+     color: #69AA46
+ }
+ .jqgrow .ui-jqgrid-actions .ui-pg-div {
+     border-color: transparent;
+ }
+ .navtable>.ui-pg-button:hover,
+ .navtable>.ui-pg-button.ui-state-hover,
+ .navtable>.ui-pg-button:focus,
+ .jqgrow .ui-jqgrid-actions .ui-pg-div:hover,
+ .jqgrow .ui-jqgrid-actions .ui-pg-div.ui-state-hover,
+ .jqgrow .ui-jqgrid-actions .ui-pg-div:focus {
+     border-color: transparent;
+ }
+ .ui-jqgrid-actions>span {
+     opacity: 0.85;
+ }
+ .ui-jqgrid-actions:hover>span,
+ .ui-jqgrid-actions:ui-state-hover>span {
+     opacity: 1;
+ }
+ .ui-jqgrid-actions>.ui-pg-div:hover,
+ .navtable>.ui-pg-button:hover>.ui-pg-div{
+     border-color: transparent;
+     transform: scale(1.2);
+ }
+ .jqgrow > td > input[type=checkbox] {
+     width: 2em;
+     height: 2em;
+ }
+ 
+ .navtable>.ui-pg-button[id^=add_] {
+     color: #A069C3;
+ }
+ 
+ .navtable>.ui-pg-button[id^=view_] {
+     color: #777;
+ }
+ .ui-jqgrid-sortable {
+     color: #777;
+ }
+ .ui-jqgrid-sortable:hover {
+     color: #547EA8
+ }
+ 
+ .navtable>.btn:active,
+ .navtable>.btn.active {
+     box-shadow: none;
+ }
+ .ui-jqgrid.ui-jqgrid-bootstrap .ui-pg-table .ui-pg-button,
+ .navButton>.fm-button {
+     border-radius: 100%;
+ }
+ 
+ .navButton>.fm-button:hover {
+     color: #699AB5;
+     border-color: #699AB5
+ }
+ .ui-jqgrid-pager,
+ .ui-jqgrid.ui-jqgrid-bootstrap>.ui-jqgrid-view>.ui-jqgrid-hdiv{
+     background-color: #EFF3F8;
+ }
+ .ui-jqgrid.ui-jqgrid-bootstrap tr.jqgrow > td,
+ .ui-jqgrid.ui-jqgrid-bootstrap tr.jqgroup > td,
+ .ui-jqgrid.ui-jqgrid-bootstrap tr.jqfoot > td {
+     padding: .5em;
+ }
+ .ui-jqgrid.ui-jqgrid-bootstrap tr.jqgfirstrow > td{
+     padding: 0 .5em;
+ }
+ 
+ .ui-pg-table:not(.navtable)>tbody>tr>.ui-pg-button:not(.ui-state-hover) {
+     color: grey;
+     border: 1px solid #CCC;
+     background-color: #FFF;
+     border-radius: 100%;
+     border: 1px solid #CCC;
+ }
+ 
+ .ui-pg-table:not(.navtable)>tbody>tr>.ui-pg-button.ui-state-hover,
+ .ui-pg-table:not(.navtable)>tbody>tr>.ui-pg-button:hover {
+     color: #699AB5;
+     border-color: #699AB5
+ }
+ .ui-jqdialog .ui-jqdialog-titlebar {
+     padding: .7em;
+     color: #669FC7;
+     background-image: linear-gradient(to bottom,#FFF 0,#EEE 100%);
+     background-repeat: repeat-x;
+ }
+ .ui-jqdialog .ui-jqdialog-titlebar-close {
+     opacity: .4;
+     color: #D15B47;
+ }
+ .ui-jqdialog .ui-jqdialog-titlebar-close:hover,
+ .ui-jqdialog .ui-jqdialog-titlebar-close.active {
+     opacity: 1;
+ }
+ .ui-jqdialog-content .modal-footer {
+     background-color: #EFF3F8
+ }
+
+/* add on */
+ .ui-jqgrid {
+  font-size: 1.7em;
+  font-family: "Noto Sans Thai", sans-serif;
+}
+
+.jqgrow > td input[type="text"].editable,
+.jqgrow > td input[type="date"].editable,
+.jqgrow > td input[type="number"].editable,
+.jqgrow > td input[type="textarea"].editable,
+.jqgrow > td input[type="checkbox"].editable,
+.jqgrow > td input,
+.jqgrow > td textarea {
+  font-family: "Noto Sans Thai", sans-serif;
+  height: 100%;
+  width: 100%;
+  font-size: 1.1rem; /* 1rem instead of 1em */
+  /*  box-sizing: border-box; */
+}
+
+.ui-jqgrid td input,
+.ui-jqgrid td select,
+.ui-jqgrid td textarea {
+  margin: 0;
+  height: auto;
+}
+
+.jqgrow > td select.editable,
+.jqgrow > td select {
+  font-family: "Noto Sans Thai", sans-serif;
+  height: 100%;
+  width: 100%;
+  font-size: 1.2rem; /* 1rem instead of 1em */
+  /* box-sizing: border-box; */
+}
+
+.ui-jqgrid .ui-jqgrid-htable .ui-search-toolbar th {
+  height: auto;
+}
+.ui-jqgrid .ui-search-toolbar .ui-search-table {
+  height: auto;
+}
+.ui-jqgrid .ui-search-toolbar .ui-search-input input,
+.ui-jqgrid .ui-search-toolbar .ui-search-input select,
+.ui-jqgrid .ui-search-toolbar .ui-search-input textarea {
+  height: 90%;
+  width: 100%;
+  font-size: 1.2rem; /* 1rem instead of 1em */
+  /* box-sizing: border-box; */
+}
+
+.ui-datepicker,
+.ui-autocomplete {
+  font-size: 14px;
+}
+.ui-autocomplete .ui-menu-item div:not(.ui-state-active) {
+  /* rservate space for the border, which will be visible on active items */
+  border: 1px solid transparent;
+}
+.ui-autocomplete .ui-menu-item div.ui-state-active {
+  /* ovewrite some default rules from jQuery UI */
+  font-weight: normal;
+  margin: 0;
+}
+
+.ui-jqgrid .ui-pg-input,
+.ui-jqgrid .ui-pg-selbox {
+  height: 17px;
+}
+.ui-jqgrid .ui-pg-table {
+  padding-bottom: 0;
+}
+.ui-jqdialog .select2-container .select2-choice,
+.ui-search-toolbar .select2-container .select2-choice {
+  height: auto;
+  padding-top: 1px;
+  padding-left: 0.2em;
+  padding-bottom: 2px;
+  line-height: 15px;
+}
+.ui-jqdialog .select2-container .select2-choice .select2-arrow b,
+.ui-search-toolbar .select2-container .select2-choice .select2-arrow b {
+  background-position: 0 -4px;
+}
+.ui-jqdialog.select2-drop {
+  padding: 0px;
+}
+.ui-jqdialog .select2-results .select2-result-label,
+.ui-search-toolbar .select2-results .select2-result-label {
+  padding: 2px;
+}
+.ui-jqgrid .ui-jqgrid-htable th div {
+  height: auto !important;
+}
+
+.ui-jqgrid tr.jqgrow td {
+  word-wrap: break-word; /* IE 5.5+ and CSS3 */
+  white-space: pre-wrap; /* CSS3 */
+  white-space: -moz-pre-wrap; /* Mozilla, since 1999 */
+  white-space: -pre-wrap; /* Opera 4-6 */
+  white-space: -o-pre-wrap; /* Opera 7 */
+  overflow: hidden;
+  height: auto;
+  vertical-align: middle;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+/*Toolbar customization*/
+.ui-jqgrid .ui-jqgrid-toppager {
+  width: auto !important; /*1200 px*/
+}
