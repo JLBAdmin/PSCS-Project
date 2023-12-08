@@ -500,13 +500,13 @@ export default class PrintController extends BaseApi {
     await queryRunner.connect();
     await queryRunnerMCSS.connect();
 
-    const quota = await queryRunnerMCSS.manager.query(
+    const quota = await MssqlDataSource.query(
       'SELECT * FROM [MCSS].[dbo].[vw_QuotaZone] WHERE QuotaCode =@0',
       [<number>(<unknown>id)]
     );
     const cropX = <number>(<unknown>crop) - 1;
     const cropYearX = `25${cropX}/${crop}`;
-    const crops = await queryRunner.manager.query(
+    const crops = await PostgresDataSource.query(
       'SELECT cropYear FROM budgets WHERE cropYear=@0 and quota =@1 and request_num =@2',
       [cropYearX, <number>(<unknown>id), reqs]
     );
@@ -647,6 +647,7 @@ export default class PrintController extends BaseApi {
       );
 
       let securitiesHis: any;
+      const securitiesPrice = '';
       if (securities.length !== 0) {
         // มีในประวัติหลักทรัพย์
         securitiesHis = 'BudgetSecurities';
@@ -657,7 +658,11 @@ export default class PrintController extends BaseApi {
             guarantor = await MssqlDataSource.getRepository(Quotas).findOneBy({
               Code: <number>(<unknown>securities[i]?.quotaGuarantor)
             });
-            guarantors.push(guarantor);
+            guarantors.push({
+              guarantor,
+              appraisalPrice: Number(securitie[i].appraisalPrice),
+              securitiesPrice: ThaiBaht(Number(securitie[i].appraisalPrice))
+            });
           }
         }
       } else {
@@ -671,13 +676,17 @@ export default class PrintController extends BaseApi {
               Code: <number>(<unknown>securitie[i]?.quotaGuarantor)
             });
 
-            guarantors.push(guarantor);
+            guarantors.push({
+              guarantor,
+              appraisalPrice: Number(securitie[i].appraisalPrice),
+              securitiesPrice: ThaiBaht(Number(securitie[i].appraisalPrice))
+            });
           }
         }
       }
 
       // eslint-disable-next-line no-console
-      // console.log(guarantors);
+      // console.log(guarantors[0]?.guarantor);
 
       // eslint-disable-next-line prefer-const
       ownerShip = await PostgresDataSource.getRepository(`${securitiesHis}`)
@@ -712,7 +721,6 @@ export default class PrintController extends BaseApi {
         )
         .getRawMany();
 
-      let securitiesPrice = '';
       ownerShip.forEach(async (owner: any, index: number) => {
         let name: string;
         if (owner.ownershipName.includes('นาย') === true) {
@@ -804,9 +812,11 @@ export default class PrintController extends BaseApi {
         }
       });
 
-      if (securitie[0]) {
-        securitiesPrice = ThaiBaht(Number(securitie[0].appraisalPrice)) || '';
-      }
+      // if (securitie[0]) {
+      //   securitiesPrice = ThaiBaht(Number(securitie[0].appraisalPrice)) || '';
+      // }
+      // // eslint-disable-next-line no-console
+      // console.log(securitie[0]);
       // eslint-disable-next-line prefer-const
       sumOwnerShip = ownerShips.length;
       const useSums = await PostgresDataSource.getRepository(Budgets)

@@ -4683,7 +4683,7 @@
                     </td>
                   </tr>
                   <% } %>
-                    <% for(let i=securities.length+1; i <=28; i++ ){ %>
+                    <% for(let i=securities.length+1; i <=25; i++ ){ %>
                       <tr height=25 style='mso-height-source:userset;height:18.75pt'>
                         <td height=25 class=xl7827530 style='height:18.75pt;border-top:none'>
                           <%= i %>
@@ -4753,6 +4753,9 @@
                           <td class=xl8727530>วันที่<span style='mso-spacerun:yes'>&nbsp;</span></td>
                           <td colspan=2 class=xl9027530>&nbsp;</td>
                           <td class=xl8927530></td>
+                        </tr>
+                        <tr height=25 style='mso-height-source:userset;height:18.75pt'>
+                          <td colspan=6 height=25 class=xl9127530 style='height:18.75pt'></td>
                         </tr>
                         <tr height=22 style='mso-height-source:userset;height:10.75pt'>
                           <td class=xl9727530></td>
@@ -4842,23 +4845,23 @@
                     <td colspan=2 class=xl8016123>1.นาย/นาง/นางสาว</td>
 
                     <td colspan=5 class=xl8716123>
-                      <%= guarantors[count].FirstNameTH %> &nbsp;&nbsp; <%= guarantors[count].LastNameTH %>
+                      <%= guarantors[count].guarantor.FirstNameTH %> &nbsp;&nbsp; <%= guarantors[count].guarantor.LastNameTH %>
                     </td>
                     <td class=xl7716123>บัตรประชาชนเลขที่</td>
                     <td class=xl9016123>
-                      <%= guarantors[count].IDCard %>
+                      <%= guarantors[count].guarantor.IDCard %>
                     </td>
                   </tr>
                   <tr height=22 style='mso-height-source:userset;height:16.5pt'>
                     <td height=22 class=xl7316123 style='height:16.5pt'></td>
                     <td colspan=2 class=xl7716123>อยู่บ้านเลขที่</td>
                     <td colspan=7 class=xl9116123>
-                      <%= guarantors[count].RegAddressNo %>
-                        <%= 'หมู่ที่ ' +guarantors[count].RegMoo %>
-                          <%= 'ตำบล ' +guarantors[count].RegTambonName %>
-                            <%= 'อำเภอ ' +guarantors[count].RegAmphurName %>
-                              <%= 'จังหวัด ' +guarantors[count].RegProvinceName %>
-                                <%= 'รหัสไปรษณีย์ ' +guarantors[count].RegAddressZipcode %>
+                      <%= guarantors[count].guarantor.RegAddressNo %>
+                        <%= 'หมู่ที่ ' +guarantors[count].guarantor.RegMoo %>
+                          <%= 'ตำบล ' +guarantors[count].guarantor.RegTambonName %>
+                            <%= 'อำเภอ ' +guarantors[count].guarantor.RegAmphurName %>
+                              <%= 'จังหวัด ' +guarantors[count].guarantor.RegProvinceName %>
+                                <%= 'รหัสไปรษณีย์ ' +guarantors[count].guarantor.RegAddressZipcode %>
                     </td>
                     <td class=xl7716123></td>
                     <td class=xl7516123></td>
@@ -4938,7 +4941,7 @@
                           “สัญญา”
                           วงเงินจำนวนเงิน</td>
                         <td colspan=2 class=xl8816123>
-                          <%= parseFloat(securities[0].appraisalPrice).toLocaleString(undefined,{ minimumFractionDigits:
+                          <%= parseFloat(guarantors[count].appraisalPrice).toLocaleString(undefined,{ minimumFractionDigits:
                             2 }) %>
                         </td>
                         <td class=xl7516123 align=left>บาท<span style='mso-spacerun:yes'>&nbsp;</span></td>
@@ -4947,7 +4950,7 @@
                         <td height=22 class=xl7316123 style='height:16.5pt'></td>
                         <td class=xl7429969>(</td>
                         <td colspan=7 class=xl8129969>
-                          <%= securitiesPrice %>
+                          <%= guarantors[count].securitiesPrice %>
                         </td>
                         <td>)</td>
                       </tr>
@@ -5174,11 +5177,11 @@
                     <td height=18 class=xl7329969 style='height:13.5pt'></td>
                     <td class=xl7429969>(</td>
                     <td colspan=4 class=xl8229969>
-                      <%= guarantors[count].TitleId===1 ? 'นาย' : '' %>
-                        <%= guarantors[count].TitleId===2 ? 'นาง' : '' %>
-                          <%= guarantors[count].TitleId===3 ? 'นางสาว' : '' %>
-                            <%= guarantors[count].FirstNameTH %> &nbsp;&nbsp; <%=
-                                guarantors[count].LastNameTH %>
+                      <%= guarantors[count].guarantor.TitleId===1 ? 'นาย' : '' %>
+                        <%= guarantors[count].guarantor.TitleId===2 ? 'นาง' : '' %>
+                          <%= guarantors[count].guarantor.TitleId===3 ? 'นางสาว' : '' %>
+                            <%= guarantors[count].guarantor.FirstNameTH %> &nbsp;&nbsp; <%=
+                                guarantors[count].guarantor.LastNameTH %>
                     </td>
                     <td class=xl7529969 align=left>)</td>
                     <td colspan=2 class=xl7429969>(</td>
@@ -5282,7 +5285,7 @@
               </div>
               <% } %>
               
-                <% if (ownerShip[0] !== '') { %>
+                <% if (ownerShip.length > 0) { %>
                       <% for(let count = 0; count < ownerShip.length; count++ ){ %>
                         <% let num = 0; %>
                           <div class="page">
